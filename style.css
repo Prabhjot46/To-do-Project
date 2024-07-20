@@ -1,0 +1,192 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    background-color: #48A30012;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+
+    text-align: center;
+}
+
+.container{
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 36px;
+    margin-bottom: 2rem;
+   
+}
+
+.heading{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+.head-color{
+    color: #52b105;
+}
+.content{
+    background-color:  #FBFBFB;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    box-shadow: 0 6px 4px rgba(0,0,0,.4);
+    width: 600px;
+}
+@media(width<=600px){
+    .content{
+        width: 90%;
+        justify-content: center;
+        margin-left: 1rem;
+    }
+    .progress{
+        text-align: center;
+    }
+    .prog span{
+        font-size: 10px;
+    }
+}
+.today-head{
+    display: flex;
+    flex-direction: row;
+    
+    font-size: 1.5rem;
+    gap: 0.5rem;
+    margin: 2rem 1.7rem;
+}
+.today-head img{
+    width: 2.5rem;
+    height: 2.5rem;
+    object-fit: cover;
+}
+.progress{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+   
+}
+.progress-bar{
+    align-self: center;
+    width: 90%;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #48A30012;
+}
+.prog{
+    display: flex;
+    height: 30px;
+    border-radius: 15px;
+    background-color: rgba(72, 163, 0, 1);
+    color: white;
+    align-items: center;
+    font-size: 14px;
+    width: 0;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+}
+.prog span{
+    padding-left: 1rem;
+    color: white;
+}
+.para{
+    align-self: flex-start;
+    margin-left: 2rem;
+    
+}
+.para1{
+    align-self: flex-start;
+    margin-left: 2rem;
+    display: none;
+}
+.showError .para1{
+    display: block;
+}
+.daily-task{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    margin-top: 2rem;
+}
+.radio-task{
+    width: 90%;
+    border: 1px solid #0000001A;
+    text-align: start;
+    padding-left: 2rem;
+    display: flex;
+    gap: 1rem;
+    height: 65px;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.radio-text{
+    border: none;
+    font-size: 16px;
+    font-weight: 300;
+    color: black;
+    width: 100%;
+    height: 2rem;
+    outline: none;
+    background-color: white;
+}
+.radio{
+   width: 24px;
+   height: 24px;
+   
+  border: 2px solid rgba(97, 72, 28, 0.3);
+  border-radius: 50%;
+  
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.check-icon{
+    display: none;
+    width: 24px;
+   height: 24px;
+   object-fit: cover;
+}
+.radio-text::placeholder{
+    color:#D9D9D9;
+    opacity: 1;
+}
+
+.radio{
+    border: 2px solid rgba(97, 72, 28, 1);
+    border-radius: 50%;
+    height: 24px;
+    width: 24px;
+}
+.motivation-text{
+    margin-top: 2rem;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+    color:#000000;
+}
+.end{
+    margin-top: 3rem;
+    font-size: 10px;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+.completed .radio-task{
+    background: #48A300;
+    border-color: #48A300;
+}
+.completed .check-icon {
+    display: block;
+}
+.completed .radio-text {
+    color: #48A300;
+    text-decoration-line: line-through;
+}
+
